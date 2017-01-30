@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_of_list_margin"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical|start"
+                android:hint="@string/sample_product_name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:hint="@string/sample_text_purchase_of_customer_amount"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_product_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_product_total_cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:hint="@string/sample_2_invoice_code"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

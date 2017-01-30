@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            android:layout_marginRight="@dimen/abc_dialog_padding_material"
+            android:layout_marginTop="@dimen/abc_dialog_padding_material"
+            android:text="@string/tour_text_welcome" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            android:layout_marginRight="@dimen/abc_dialog_padding_material"
+            android:layout_marginTop="@dimen/top_of_list_margin"
+            android:text="@string/tour_text_first" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            android:layout_marginRight="@dimen/abc_dialog_padding_material"
+            android:layout_marginTop="@dimen/top_of_list_margin"
+            android:text="@string/tour_text_second" />
+
+        <ListView
+            android:id="@+id/list_view_tour_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/abc_dialog_padding_material" />
+
+    </LinearLayout>
+
+</ScrollView>

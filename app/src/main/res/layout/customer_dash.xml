@@ -3,80 +3,135 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/activity_vertical_margin"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-  <LinearLayout
-       android:layout_width="0dp"
-      android:layout_weight="1"
-      android:layout_marginLeft="@dimen/activity_horizontal_margin"
-      android:layout_marginStart="@dimen/activity_horizontal_margin"
-      android:layout_height="match_parent"
-      android:gravity="start"
-      android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="@color/black_text"
-        android:text="@string/customer_dash_membership"/>
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="@dimen/activity_vertical_margin"
-          android:textAppearance="?android:textAppearanceMedium"
-          android:textColor="@color/black_text"
-          android:text="@string/customer_dash_purchase_amount"/>
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="@dimen/activity_vertical_margin"
-          android:textAppearance="?android:textAppearanceMedium"
-          android:textColor="@color/black_text"
-          android:text="@string/customer_dash_total_balance"/>
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="@dimen/activity_vertical_margin"
-          android:textAppearance="?android:textAppearanceMedium"
-          android:textColor="@color/black_text"
-          android:text="@string/customer_dash_number_purchase"/>
-    </LinearLayout>
-  <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="@string/customer_dash_membership"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
         <ImageView
             android:id="@+id/customer_dash_membership"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="5"
             android:src="@drawable/star"
-            />
+            android:textAppearance="?android:textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="@string/customer_dash_purchase_amount"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
         <TextView
             android:id="@+id/customer_dash_total_purchase"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="5"
+            android:gravity="center"
             android:textAppearance="?android:textAppearanceMedium"
-            />
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="@string/customer_dash_total_balance"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
         <TextView
             android:id="@+id/customer_dash_total_balance"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="5"
+            android:gravity="center"
             android:textAppearance="?android:textAppearanceMedium"
-            />
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:text="@string/customer_dash_number_purchase"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
         <TextView
             android:id="@+id/customer_dash_number_purchase"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="5"
+            android:gravity="center"
             android:textAppearance="?android:textAppearanceMedium"
-           />
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
 
     </LinearLayout>
 

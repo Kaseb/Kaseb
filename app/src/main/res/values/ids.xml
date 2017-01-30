@@ -3,4 +3,9 @@
     <item name="customer_tab_info" type="id">Info</item>
     <item name="customer_tab_dash" type="id">Dashboard</item>
     <item name="customer_tab_bill" type="id">Bills</item>
+    <item name="msg_insert_succeed" type="id">Data inserted successfully.!</item>
+    <item name="title_dialog_add_cost_type" type="id">Add cost type</item>
+    <item name="title_dialog_add_payment_methods" type="id">Add Payment methods</item>
+    <item name="title_dialog_add_tax_types" type="id">Add Tax types</item>
+    <item name="title_dialog_add_state" type="id">Add a Customer State</item>
 </resources>

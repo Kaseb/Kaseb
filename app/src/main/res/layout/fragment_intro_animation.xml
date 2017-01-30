@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:alpha="0.7"
+    android:background="@drawable/back_ground_mall"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/kaseb_intro_page_animation"
+            android:src="@drawable/kaseb_center" />
+
+        <TextView
+            android:id="@+id/care_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/intro_kaseb_slang"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</FrameLayout>

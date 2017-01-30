@@ -5,29 +5,31 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="kaseb_hadith">Businessman Habib Allah</string>
-    <string name="kaseb_name">Ali Ghorbani</string>
+    <string name="kaseb_hadith">Tradesman Habib Allah</string>
+    <string name="kaseb_name">Not Set</string>
     <string name="title_customer">Customers</string>
-    <string name="title_Debtors">Debators</string>
+    <string name="title_Debtors">Debtors</string>
     <string name="title_invoice">Invoices</string>
-    <string name="title_debtors">Debators</string>
+    <string name="title_debtors">Debtors</string>
     <string name="title_sales">Sales</string>
     <string name="title_costs">Costs</string>
     <string name="title_products">Products</string>
     <string name="title_setting">Setting</string>
-    <string name="title_about_us">About us</string>
+    <string name="title_contact_us">Contact Us</string>
     <string name="title_activity_customers">Customers</string>
     <string name="label_total_sale">Total Sale($)</string>
     <string name="label_total_customer_purchase">Purchase</string>
     <string name="label_total_customer_debt">Debt</string>
     <string name="sample_text_debt_of_customer_amount">800</string>
     <string name="sample_text_purchase_of_customer_amount">1,500,000</string>
-    <string name="sample_ali_ghorbani">Ali Ghorbani</string>
-    <string name="sample_mohammad_alikhani">Mohammad AliKhani</string>
+    <string name="sample_ali_ghorbani_name">Ali</string>
+    <string name="sample_ali_ghorbani_last_name">Ghorbani</string>
+    <string name="sample_mohammad_alikhani_name">Mohammad</string>
+    <string name="sample_mohammad_alikhani_last_name">AliKhani</string>
     <string name="sample_sima_saberzadeh">Sima Saberzadeh</string>
     <string name="format_purchase_amount"><xliff:g id="purchase_amount">%1$s</xliff:g> $</string>
     <string name="search_title">Search</string>
-    <string name="search_hint">Search customers</string>
+    <string name="search_hint">Enter customer\'s name</string>
     <string name="sort_alphabetic">Alphabetic</string>
     <string name="sort_membership">Membership</string>
     <string name="sort_title">Sort</string>
@@ -36,88 +38,474 @@
     <string name="sample_invoice_code">12420</string>
     <string name="sample_invoice_ballance">1200000</string>
     <string name="sample_due_date_1_day">6/27/16</string>
-    <string name="column_title_account_balance">Balance($)</string>
+    <string name="column_title_account_balance">Balance</string>
     <string name="column_title_Bill_code">Code</string>
-    <string name="column_title_day_of_maturity">Due date</string>
+    <string name="column_title_day_of_maturity">Due Date</string>
     <string name="sample_2_invoice_code">13120</string>
     <string name="sample_due_date_2_day">8/27/16</string>
     <string name="sample_invoice_2_ballance">300000</string>
-    <string name="title_debator">Debators</string>
-    <string name="debtor_share_text_to_send">your total balance is: </string>
+    <string name="title_debator">Debtors</string>
+    <string name="debtor_share_text_to_send">Hi Dear customer, your total balance is :</string>
     <string name="title_activity_sales">Sales</string>
     <string name="sort_date">Date</string>
-    <string name="sort_code">Sales code</string>
-    <string name="sample_sale_code">INV-000123</string>
-    <string name="header_this_week">This week</string>
-    <string name="header_older">Older</string>
+    <string name="sort_code">Sale Code</string>
+    <string name="sample_sale_code">INV-1</string>
+    <string name="header_this_week">This Meek</string>
     <string name="header_today">Today</string>
-    <string name="header_this_month">This month</string>
+    <string name="header_this_month">This Month</string>
     <string name="title_activity_costs">Costs</string>
     <string name="fab_add_cost">Add cost</string>
-    <string name="sort_cost_code">Cost code</string>
-    <string name="sample_cost_name">personnel salary</string>
-    <string name="sample_cost_name_2">phone bill</string>
-    <string name="sample_cost_name_3">dinner</string>
-    <string name="sample_cost_name_4">transport</string>
+    <string name="sort_cost_code">Cost Code</string>
+    <string name="sample_cost_name">Personnel Salary</string>
+    <string name="sample_cost_name_2">Phone Bill</string>
+    <string name="sample_cost_name_3">Dinner</string>
+    <string name="sample_cost_name_4">Transport</string>
     <string name="title_activity_products">Products</string>
     <string name="fab_add_product">Add product</string>
-    <string name="sort_product_code">products code</string>
+    <string name="sort_product_code">Products Code</string>
     <string name="sample_product_name">Samsung GE7</string>
     <string name="sample_product_name_2">Samsung GA7</string>
     <string name="sample_product_name_3">Samsung GJ7</string>
     <string name="sample_product_name_4">Samsung GA5</string>
     <string name="sample_product_name_5">Samsung GJ5</string>
     <string name="sample_product_name_6">Samsung GN5</string>
-    <string name="cupcake_ipsum">Cupcake ipsum dolor sit amet. Cheesecake sugar plum bear claw. Bonbon sesame snaps icing jelly pudding. Bonbon halvah gingerbread bonbon candy. Gummi bears cookie brownie chupa chups jujubes icing cake. Donut powder oat cake marshmallow dessert gummies. Cupcake macaroon gingerbread soufflé tootsie roll gummi bears. Sweet jujubes liquorice chocolate cake. Dessert pudding ice cream muffin candy canes. Donut carrot cake marzipan pastry topping powder. Cake topping jelly dessert gingerbread chocolate cake dessert ice cream jelly beans. Muffin toffee bonbon gingerbread halvah. Cheesecake icing danish pie candy chupa chups icing.\n\nCandy liquorice macaroon. Caramels sugar plum dragée macaroon gummies liquorice. Cake gummi bears cookie brownie tiramisu jelly beans pie apple pie. Sesame snaps pastry pudding apple pie gummi bears fruitcake macaroon jelly-o jelly-o. Gummies oat cake brownie pudding wafer chocolate cake lollipop chocolate cake. Chocolate lemon drops cake cake dessert jujubes halvah. Cake muffin pie gummies gummi bears dragée sesame snaps. Jelly-o jelly jelly. Croissant biscuit tootsie roll sweet roll sweet roll ice cream marzipan. Candy biscuit cheesecake lollipop jelly pie dragée powder cotton candy. Gummi bears cake pastry biscuit dessert fruitcake powder sweet lollipop. Apple pie cotton candy pie. Powder toffee candy cookie fruitcake gingerbread marzipan caramels tiramisu. Fruitcake marshmallow caramels biscuit.\n\nBear claw cake brownie bonbon oat cake sweet roll soufflé. Apple pie liquorice tootsie roll lemon drops candy jujubes croissant liquorice. Icing sugar plum pudding lemon drops donut macaroon wafer. Cupcake apple pie chocolate. Cupcake jelly beans chupa chups pie wafer. Tart dessert sugar plum candy canes sesame snaps sweet roll. Oat cake chupa chups macaroon powder powder chocolate bar. Jelly topping carrot cake liquorice jelly-o. Lemon drops candy chupa chups donut sweet roll. Gummi bears marzipan cupcake tootsie roll toffee. Candy gingerbread jujubes halvah tart cheesecake. Tiramisu cake jujubes chocolate bar jelly lemon drops lollipop.\n\nBiscuit jelly-o tart croissant sesame snaps sweet sugar plum cake lemon drops. Topping carrot cake sesame snaps donut. Sweet roll chocolate cake chocolate toffee toffee gummies. Danish powder carrot cake. Pudding liquorice toffee lollipop wafer jelly beans wafer. Lollipop gummies biscuit pastry marshmallow tiramisu cake candy canes. Jujubes jujubes brownie. Chupa chups halvah tiramisu fruitcake tiramisu donut oat cake gingerbread dessert. Croissant wafer oat cake chocolate. Tart candy pudding cotton candy gingerbread sweet. Liquorice icing croissant biscuit tiramisu sugar plum. Tootsie roll chocolate pie jujubes croissant danish danish icing. Ice cream lollipop chocolate. Cake macaroon sugar plum sweet.\n\nDonut bonbon lollipop danish brownie danish carrot cake. Tootsie roll tiramisu marshmallow candy canes gingerbread topping muffin sesame snaps. Sweet jujubes cupcake gummies. Carrot cake pastry candy canes icing jelly toffee. Carrot cake sugar plum caramels carrot cake. Sesame snaps marshmallow brownie macaroon sweet roll. Cake gummi bears tart chocolate bar tart powder cake toffee sweet. Fruitcake jelly-o jujubes chupa chups sweet roll sweet roll bear claw macaroon. Sweet roll gummies jelly beans powder powder brownie macaroon. Lollipop tart croissant sugar plum sesame snaps sweet cheesecake icing sweet. Jujubes gummi bears oat cake pastry muffin fruitcake. Fruitcake gingerbread chocolate cake. Pie tart cookie donut marzipan cookie. Pudding chupa chups brownie oat cake jelly sweet.</string>
     <string name="customer_dash_membership">Membership</string>
-    <string name="customer_dash_purchase_amount">Total purchase</string>
+    <string name="customer_dash_purchase_amount">Total Purchase</string>
     <string name="customer_dash_total_balance">Balance</string>
-    <string name="customer_dash_number_purchase">No.Purcahse</string>
+    <string name="customer_dash_number_purchase">No. Purcahse</string>
     <string name="customer_tab_info">Info</string>
     <string name="customer_tab_dash">Dashboard</string>
     <string name="customer_tab_bill">Bills</string>
-    <string name="back_arrow">back</string>
-    <string name="edit_action_description">This icon let you modify customer data</string>
-    <string name="set_membership">set membership</string>
+    <string name="back_arrow">Back</string>
+    <string name="edit_action_description">Modifies customer data</string>
+    <string name="set_membership">Set membership</string>
     <string name="gold_member">Gold Member</string>
     <string name="silver_memer">Silver Member</string>
     <string name="bronze_member">Bronze Member</string>
-    <string name="non_member">no member</string>
+    <string name="non_member">New member</string>
     <string name="title_activity_detail_sale">DetailSale</string>
-    <string name="detail_sales_products_items_header">Items list</string>
+    <string name="detail_sales_products_items_header">Items List</string>
+    <string name="detail_sales_info_header">Info</string>
     <string name="detail_sales_payment_header">Payments</string>
-    <string name="detail_sales_taxDiscount_header">Other Items</string>
+    <string name="detail_sales_taxDiscount_header">Tax/Discount</string>
     <string name="detail_sales_summary_header">Summary</string>
-    <string name="detail_sales_summary_customer_code">Customer</string>
-    <string name="detail_sales_summary_total_amount">Total amount</string>
+    <string name="detail_sales_info_customer_name">Customer Name</string>
+    <string name="detail_sales_info_customer_family">Customer Family</string>
+    <string name="detail_sales_info_sale_code">Sale Code</string>
+    <string name="detail_sales_summary_total_amount">Total Amount</string>
     <string name="detail_sales_summary_total_balance">Balance</string>
-    <string name="payment_model_cash">cash</string>
+    <string name="payment_model_cash">Cash</string>
     <string name="payment_model_pos" translatable="false">POS</string>
-    <string name="payment_model_cheque">Cheque</string>
+    <string name="payment_model_czech">Cheque</string>
     <string name="payment_model_credit">Credit</string>
     <string name="sale_tax_tax_stick">Tax</string>
     <string name="sale_tax_off_stick">Discount</string>
     <string name="detail_sales_summary_tax">Tax</string>
     <string name="detail_sales_summary_discount">Discount</string>
-    <string name="detail_sales_summary_final_amount">Final amount</string>
-    <string name="detail_sales_summary_payment">Payed</string>
-    <string name="print_detail_sale_action_description">it prints your sale detail description and make a picture in your gallery</string>
+    <string name="detail_sales_summary_final_amount">Final Amount</string>
+    <string name="detail_sales_summary_payment">Paid</string>
+    <string name="print_detail_sale_action_description">Prints your sale invoices</string>
+    <string name="print_your_factor">Prints your sale invoices</string>
     <string name="fab_add_payment">Add payment</string>
     <string name="fab_add_tax">Add tax</string>
     <string name="fab_add_discount">Add discount</string>
-    <string name="edit_detail_sale_action_description">it let you edit your saved invoice</string>
-    <string name="print_button">print</string>
-    <string name="save">save</string>
-    <string name="save_detail_sale_action_description">it let you save your changes</string>
+    <string name="edit_detail_sale_action_description">Edits saved invoices</string>
+    <string name="print_button">Print</string>
+    <string name="save">Save</string>
+    <string name="save_detail_sale_action_description">Saves your changes</string>
+    <string name="save_your_factor">Saves your sale invoice</string>
     <string name="title_activity_detail_products">DetailProducts</string>
     <string name="title_product_name">Name</string>
     <string name="title_product_code">Code</string>
     <string name="title_product_unit">Unit</string>
-    <string name="title_card_price_list_buy_price">Buy price</string>
+    <string name="title_card_price_list_buy_price">Buy Price</string>
     <string name="title_card_price_list_sale_price">Sale Price</string>
     <string name="sample_unit">Device</string>
-    <string name="detail_product_action_description">it let you register buy and sale price</string>
+    <string name="detail_product_action_description">Register buy price and sale price</string>
     <string name="title_card_detail_product">Product Information</string>
-    <string name="share_action_description">it share your product detail information</string>
-    <string name="edit_detail_product_action_description">it let you edit product information</string>
+    <string name="share_action_description">Sares product\'s detail</string>
+    <string name="edit_detail_product_action_description">Edits product information</string>
+    <!-- CostInsert Hints-->
+    <string name="hint_cost_name">Cost Name</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_cost_amount">Amount</string>
+    <string name="hint_cost_code">Cost Code</string>
+    <string name="msg_insert_succeed">Added Successfully</string>
+    <string name="msg_update_succeed">Updated Successfully</string>
+    <string name="msg_delete_succeed">Deleted Successfully</string>
+    <string-array name="cost_types">
+        <item>Bill</item>
+        <item>Tax</item>
+        <item>Salary</item>
+        <item>Others</item>
+    </string-array>
+    <!--default cost types strings-->
+    <string name="cost_types_bill">Bill</string>
+    <string name="cost_types_tax">Tax</string>
+    <string name="cost_types_salary">Salary</string>
+    <string name="cost_types_others">Other</string>
+    <!-- default tax type strings-->
+    <string name="tax_types_vas">VAS</string>
+    <string name="tax_types_discount">Discount</string>
+    <!-- default payment method strings-->
+    <string name="payment_method_cash">Cash</string>
+    <string name="payment_method_credit">Credit</string>
+    <string name="payment_method_cheque">Cheque</string>
+    <string name="payment_method_pos" translatable="false">POS</string>
+    <!-- default customer states-->
+    <string name="states_gold">Golden</string>
+    <string name="states_silver">Silver</string>
+    <string name="states_bronze">Bronze</string>
+    <string name="states_instart">Ordinary</string>
+
+    <!-- CustomerInsert Hints-->
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_birth_day">Birthday</string>
+    <string-array name="state_types">
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Yellow</item>
+    </string-array>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone_work">Work Number</string>
+    <string name="hint_phone_home">Home Number</string>
+    <string name="hint_phone_other">Other Number</string>
+    <string name="hint_phone_fax">Fax Number</string>
+    <string name="hint_address_country">Address Country</string>
+    <string name="hint_address_city">Address City</string>
+    <string name="hint_address_street">Address Street</string>
+    <string name="hint_address_postal_code">Address Postal Code</string>
+    <!-- ProductInsert Hints-->
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_code">Product Code</string>
+    <string name="hint_product_unit">Product Unit</string>
+    <string name="hint_product_description">Product Description</string>
+    <!-- ProductHistoryInsert Hints-->
+    <string name="hint_buy_price">Buy Price</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_sale_price">Sale Price</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_product_history_save">Save</string>
+    <string name="hint_buy_price_discount_amount">Discount Amount For Just One Item</string>
+    <string name="hint_buy_price_discount_percent">Discount Percent For Just One Item</string>
+    <!-- Sale&DetailSaleInsert -->
+    <string name="title_add_product_for_sale">Choose your product/service …</string>
+    <string name="title_add_product_history">Product History</string>
+    <string name="save_button">Save</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="pref_header_cost">Cost Types</string>
+    <string name="pref_header_tax">Tax Types</string>
+    <string name="pref_header_payment">Payment methods</string>
+    <string name="pref_header_customer">Customer States</string>
+    <string name="pref_header_backup">Backup/Restore</string>
+    <string name="pref_header_import_contacts">Import Contacts</string>
+    <string name="pref_header_kaseb">Kaseb</string>
+    <string name="add_types_setting">Add item</string>
+    <string name="title_activity_my_setting">Setting</string>
+    <string name="add_new_type">Type name</string>
+
+    <string name="sample_product_name_7">LG 290</string>
+    <string name="sample_product_name_8">LG 478</string>
+    <string name="sample_product_name_9">Sony 2020</string>
+    <string name="sample_product_name_10">Sony J10i2</string>
+    <string name="hint_discount_amount">Discount Amount</string>
+    <string name="hint_discount_percent">Discount Percent</string>
+    <string name="hint_tax_amount">Tax Amount</string>
+    <string name="hint_tax_percent">Tax Percent</string>
+    <string name="hint_due_date">Due Date</string>
+    <string name="hint_payment_amount">Payment Amount</string>
+    <string name="sample_ali_ghorbani_city">Tehran</string>
+    <string name="sample_ali_ghorbani_country">Iran</string>
+    <string name="sample_ali_ghorbani_street">ValiAsr</string>
+    <string name="sample_ali_ghorbani_postal_code">1856958458</string>
+    <string name="sample_ali_ghorbani_description">find in congress</string>
+    <string name="sample_cost_description">No Description</string>
+    <string name="sample_sale_code_2">INV-2</string>
+    <string name="dialog_title_import_customer_fail">Import Failed</string>
+    <string name="dialog_message_import_customer_fail_par1">Import contact failed</string>
+    <string name="dialog_message_import_customer_fail_par2">Isn\'t complete</string>
+    <string name="dialog_positive_button">OK</string>
+    <string name="dialog_input_import_contact_first_last_name">First Name or Last Name</string>
+    <string name="dialog_input_import_contact_phone_mobile">Mobile phone number</string>
+    <string name="dialog_input_import_contact_general">Input Data</string>
+    <string name="dialog_select_backup_restore">Back current data up or Restore previous Backup?</string>
+    <string name="dialog_select_backup">Backup</string>
+    <string name="dialog_select_restore">Restore</string>
+    <string name="dialog_select_cancel">Cancel</string>
+    <string-array name="payment_method">
+        <item>Cheque</item>
+        <item>Cash</item>
+    </string-array>
+    <string name="payment_list_for_sale_amount_title">Amount</string>
+    <string name="payment_list_for_sale_due_date_title">Due Date</string>
+    <string name="payment_list_for_sale_payment_method_title">Payment Type</string>
+    <string name="tax_list_for_sale_amount_title">Tax Amount</string>
+    <string name="tax_list_for_sale_percent_title">Tax Percent</string>
+    <string name="tax_list_for_sale_tax_type_title">Tax Type</string>
+    <string name="Add">Add</string>
+    <string name="sale_date">Sale Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="sort_name">Sort Name</string>
+    <string name="how_many">Set Quantity</string>
+    <string name="fab_edit_customer">Edit Customer</string>
+    <string name="fab_edit_product">Edit Product</string>
+    <string name="fab_edit_payment">Edit Payment</string>
+    <string name="fab_edit_tax">Edit Tax</string>
+    <string name="edit">Edit</string>
+    <string name="dialog_select_state_color">Select Color</string>
+    <string name="detail_sales_products_items_name">Product Name</string>
+    <string name="detail_sales_products_items_quantity">Quantity</string>
+    <string name="detail_sales_products_items_price">Price</string>
+    <string name="detail_sales_payment_amount">Amount</string>
+    <string name="detail_sales_payment_due_date">Due Date</string>
+    <string name="detail_sales_payment_type">Type</string>
+    <string name="detail_sales_taxDiscount_amount">Amount</string>
+    <string name="detail_sales_taxDiscount_percent">Percent</string>
+    <string name="detail_sales_taxDiscount_type">Type</string>
+    <string name="dialog_add_payment_is_pass">Is cheque passed?</string>
+    <string name="title_edit_cost">Edit costs</string>
+    <string name="update_button">Update</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="title_product_description">Description</string>
+    <string name="card_dashboard_customers">Customers Status</string>
+    <string name="card_dashboard_sales">Sales Status</string>
+    <string name="card_dashboard_other">Recievables Status</string>
+    <string name="kaseb_dashboard_customer_qty">Total</string>
+    <string name="kaseb_dashboard_customer_qty_gold">Golden</string>
+    <string name="kaseb_dashboard_customer_qty_silver">Silver</string>
+    <string name="kaseb_dashboard_customer_qty_bronze">Bronze</string>
+    <string name="kaseb_dashboard_customer_qty_instart">Ordinary</string>
+    <string name="kaseb_dashboard_sale_total">Total Sale</string>
+    <string name="kaseb_dashboard_others_total_recievables_instart">Ordinary</string>
+    <string name="kaseb_dashboard_others_total_recievables_bronze">Bronze</string>
+    <string name="kaseb_dashboard_others_total_recievables_silver">Silver</string>
+    <string name="kaseb_dashboard_others_total_recievables_gold">Golden</string>
+    <string name="title_dashboard">Kaseb Dashboard</string>
+    <string name="kaseb_dashboard_recievables_total">Total Recievables</string>
+
+    <string name="about_us_my_info">
+    Dear Kaseb(TradesMan)!\nKaseb is an app to manage your communication with customers, you should know, it\'s
+    not an acconting one. This is CRM. We developed it in order to give you a more focus on your customers as your main property,
+    more than ever. With this, Firstly you will be able to schedule better to the future; Secondly you will be able to find out
+    how many Golden customer do you have and increase them.\nAt last, we do our best to eliminate any bugs and improve all aspects of quality
+    with your aim, then release updated version as soon as possible.\nSo tell us what\'s wrong with this and your opinion about Kaseb.
+    </string>
+
+    <string name="about_us_hint_your_text">Write your feedback</string>
+    <string name="about_us_hint_your_email">Enter your email address</string>
+    <string name="search_title_sale">Sale Code</string>
+    <string name="search_title_products">Product Name</string>
+    <string name="search_title_cost">Cost Title</string>
+
+    //region Sales Invoice Print
+    <string name="title_of_print_invoice">Sales Invoice</string>
+    <string name="title_of_invoice_items">Invoice Items</string>
+    <string name="title_of_taxes">Invoice Taxes</string>
+    <string name="title_of_discounts">Invoice Discounts</string>
+    <string name="title_of_payments">Invoice Payments</string>
+    <string name="title_of_invoice_summary">Invoice Summary</string>
+    <string name="more_than_balance_amount">Is more than balance amount</string>
+    <string name="more_than_total_amount">Is more than total amount</string>
+    <string name="save_factor_then_print">To print, save your sale invoice</string>
+    <string name="non_repetitive">\n(Non-repetitive)</string>
+    <string name="register_message_copyright">Registered By KASEB. ©</string>
+    <string name="seller_info">Kaseb : </string>
+    <string name="seller_tell">Kaseb phone : </string>
+    <string name="seller_address">Kaseb Address :</string>
+    <string name="customer_info">Customer:</string>
+    <string name="invoice_date">Date</string>
+    <string name="invoice_sale_code">Sale Code</string>
+    <string name="row_title">Row</string>
+    <string name="good_title">Good</string>
+    <string name="price_title">Price</string>
+    <string name="quantity_title">Quantity</string>
+    <string name="total_title">Total</string>
+    <string name="type_title">Type</string>
+    <string name="amount_title">Amount</string>
+    <string name="percent_title">Percent</string>
+    <string name="total_amount_title">Total Amount</string>
+    <string name="total_tax_title">Total Tax</string>
+    <string name="total_discount_title">Total Discount</string>
+    <string name="total_paied_title">Total Paied</string>
+    <string name="total_unpaied_title">Total Unpaied</string>
+    <string name="stamp_and_signature">Stamp and Signature</string>
+    <string name="seller_title">Seller</string>
+    <string name="buyer_title">Buyer</string>
+    <string name="sales_pdf_meta_data_title">Sale Invoice</string>
+    <string name="sales_pdf_meta_data_subject" translatable="false">Kaseb Release 1.0</string>
+    <string name="sales_pdf_meta_data_kew_words">Kaseb, Sales, Invoice</string>
+    <string name="sales_pdf_meta_data_author">Kaseb</string>
+    <string name="sales_pdf_meta_data_creator">Kaseb</string>
+    <string name="vas_title">VAS</string>
+    <string name="discount_title">Discount</string>
+    <string name="passed_cheque_title">: Is passed</string>
+    <string name="not_passed_cheque_title">: Isn\'t passed</string>
+    //endregion Sales Invoice Print
+
+    <string name="sale_code_prefix">INV- </string>
+    <string name="detail_sales_summary_customer_code">Customer Code</string>
+    <string name="title_dialog_add_cost_type">Add cost type</string>
+    <string name="title_dialog_add_payment_methods">Add payment method</string>
+    <string name="title_dialog_add_tax_types">Add tax type</string>
+    <string name="title_dialog_add_state">Add membership</string>
+    <string name="cost_code_prefix">C-</string>
+    <string name="product_code_prefix">P-</string>
+    <string name="validity_error_dsale_select_product">Choose some product/service</string>
+    <string name="confirm_title">Confirmation</string>
+    <string name="confirm_message_delete_customer_image">Delete this customer\'s image?\n\nCustomer Name:</string>
+    <string name="confirm_delete_customer_list_it_has">This customer has</string>
+    <string name="confirm_delete_customer_list_factors">factor(s)</string>
+    <string name="confirm_want_delete_customer_info">Delete this customer?\n\nCustomer Info:</string>
+    <string name="confirm_message_delete_this_cost">Delete cost?\n\nCost Title:</string>
+    <string name="confirm_message_delete_sale">Delete invoice?\n\nSale Code:</string>
+    <string name="confirm_delete_product_list_it_has_factor">Can\'t be deleted, because</string>
+    <string name="confirm_delete_product_list_it_has">factor(s) heve this product</string>
+    <string name="confirm_delete_product_list">Delete product?\n\nProduct Name:</string>
+    <string name="confirm_delete_tax">Delete tax?\n\nTax Amount:</string>
+    <string name="payment_model_cheque">Cheque</string>
+    <string name="choose_customer_error_for_sale">Choose customer</string>
+    <string name="cheque_title">Cheque</string>
+    <string name="confirm_delete_payment">Delete payment?\n\nPayment Amount:</string>
+    <string name="stock_product">In Stock:</string>
+    <string name="not_enough_stock">Isn\'t enough good in stock</string>
+    <string name="less_than_stock_explain_text">Select product to add in items.</string>
+    <string name="edit_quantity">Change Quantity</string>
+    <string name="discard_button">Discard</string>
+    <string name="state_type_image_box_title" translatable="false">stateType</string>
+    <string name="not_more_hundred">Percent is more than 100</string>
+    <string name="discount_amount_not_more_than_sale_price">Discount Amount is more than sale price</string>
+    <string name="amount_not_less_than_sale_price">Amount is less than zero</string>
+    <string name="cost_sale_product_tag_image_title" translatable="false">costSaleProductTagImage</string>
+    <string name="click_here_choose_customer">To choose customer, tap here</string>
+    <string name="image_avatar_title" translatable="false">image_avatar_title</string>
+    <string name="content_detail_sale_insert_add_product_image_button" translatable="false">content_detail_sale_insert_add_product_image_button</string>
+    <string name="detail_sales_products_items_total">Total</string>
+    <string name="avatar_customer_insert" translatable="false">avatar_customer_insert</string>
+    <string name="title_product_stock">Stock</string>
+    <string name="buy_date">Buy Date</string>
+    <string name="intro_kaseb_slang">Care your customers</string>
+    <string name="detail_customer_toolbar_title">Customer Info</string>
+    <string name="customer_image_transition" translatable="false">customer_image_transition</string>
+    <string name="code_text_transition" translatable="false">code_text_transition</string>
+    <string name="pref_header_edit_profile">Kaseb Profile</string>
+    <string name="no_data_text_customers_states">Add some customers</string>
+    <string name="no_data_text_sale">Add some invoices</string>
+    <string name="import_successful">Import Successful!</string>
+    <string name="import_contact_failed">Import Failed!</string>
+    <string name="backup_successful">Backup Successful!</string>
+    <string name="problem_in_crop_image">Problem in crop action</string>
+    <string name="does_not_support_crop_action">Problem in crop action</string>
+    <string name="complete_profile_kaseb">To continue, enter required fields</string>
+    <string name="title_take_tour">Take a tour</string>
+    <string name="insert_customer">Add Customer</string>
+    <string name="insert_product">Add Product</string>
+    <string name="insert_sale_and_print">Create and Print invoice</string>
+    <string name="insert_cost">Add Cost</string>
+    <string name="change_setting">Change Setting</string>
+    <string name="contact_debtors">Contact debtors</string>
+    <string name="next_tour">Next</string>
+    <string name="back_tour">Back</string>
+    <string name="cancel_tour">Cancel</string>
+    <string name="start_tour">Start</string>
+    <string name="title_set_profile">Kaseb Profile</string>
+    <string name="kasebPreference" translatable="false">kasebProfile</string>
+    <string name="finish_tour">Finish</string>
+    <string name="title_customer_insert">Add new customer</string>
+    <string name="title_product_insert">Add New Product/Service</string>
+    <string name="title_sale_insert">Create new sale</string>
+    <string name="choose_member_ship_of_customer">Choose membership </string>
+    <string name="choose_type_of_cost">Choose cost type</string>
+    <string name="ok_button">OK</string>
+    <string name="kaseb_intro_page_animation" translatable="false">Kaseb Intro Page Animation</string>
+    <string name="avatar_kaseb" translatable="false">Avatar Kaseb</string>
+
+    <string name="example_first_name">Example : Ali</string>
+    <string name="example_last_name">Example : Watson</string>
+    <string name="example_mobile_number">Example : 09121234567</string>
+    <string name="example_date">Example : 2017/1/1</string>
+    <string name="example_email">Example : kaseb@gmail.com</string>
+    <string name="example_product_name">Example : Samsung S7</string>
+    <string name="example_product_code">Example : P-1</string>
+    <string name="example_price">Example : 150000</string>
+    <string name="example_quantity">Example : 15</string>
+    <string name="example_cost_name">Example : Gas Bill</string>
+    <string name="example_cost_code">Example : C-1</string>
+    <string name="example_sale_code">Example : INV-1</string>
+
+    <string name="tour_text_customer_list">This page shows your customers and you can add a customer here.</string>
+    <string name="tour_text_customer_insert">This page lets you insert necessary data of customer, choose a picture arbitrary then save him/her from top right corner with save button.</string>
+    <string name="tour_text_sale_list">This page lets you see your sale invoices, insert one, click each one to edit or print.</string>
+    <string name="tour_text_product_list">This page lets you see your products and services, insert one, click each one to edit and also add a purchase.</string>
+    <string name="tour_text_product_insert">This page lets you insert necessary data of product then save it from top right corner with save button.</string>
+    <string name="tour_text_sale_insert">This page lets you insert a sale step by step :\n1. Add products.\n2. Add taxes and discounts.\n3. Add payments.\n4. Save it from top right corner with save button.\n5. Print it Automatically.</string>
+    <string name="tour_text_welcome">Welcome to this Tour!</string>
+    <string name="tour_text_first">To use this app you should go this path, step by step :</string>
+    <string name="tour_text_second">1. Add a customer.\n2. Add a product.\n3. Insert sale invoice for a customer then print it.\n4.Check Dashboard.</string>
+
+    <string name="final_amount_not_minus_number">Final Amount is less than zero</string>
+    <string name="balance_amount_not_minus_number">Balance Amount is less than zero</string>
+    <string name="message_add_profile">Add your information</string>
+
+    <string name="empty_list_text">Not saved data</string>
+    <string name="close_activity_dialog_title">Exit</string>
+    <string name="close_activity_dialog_message">Exit Kaseb?</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="write_your_mind">Please write your opinion, next try to send</string>
+    <string name="opinion_email_title">Opinion from customer</string>
+    <string name="no_email_app">There are no email clients installed</string>
+    <string name="problem_in_pdf_reader">Invoice saved, But there is a problem with pdf reader.</string>
+
 </resources>

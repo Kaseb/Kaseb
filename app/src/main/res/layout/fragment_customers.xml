@@ -1,17 +1,36 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutCustomerList"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mjkarbasian.moshtarimadar.CustomersFragment"
+    tools:context=".Customers.CustomersLists"
     tools:showIn="@layout/activity_customers">
+
     <ListView
         android:id="@+id/list_view_customers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@null"
-        >
-    </ListView>
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/empty_text_view"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_Large_margin"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_customers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:gravity="center"
+        android:onClick="fab_customers"
+        android:src="@drawable/plus" />
 
 </FrameLayout>

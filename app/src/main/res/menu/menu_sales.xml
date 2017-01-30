@@ -1,25 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/search_button"
-        android:title="@string/search_title"
         android:icon="@drawable/search"
-        app:showAsAction="always"
-        android:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/search_title_sale"
         app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"
         />
     <item
         android:id="@+id/sort_button"
         android:icon="@drawable/sort"
         android:title="@string/sort_title"
         app:showAsAction="always"
-        android:showAsAction="ifRoom">
+        >
         <menu>
             <item
                 android:id="@+id/menu_sort_code"
                 android:title="@string/sort_code" />
-            <item
-                android:id="@+id/menu_sort_date"
-                android:title="@string/sort_date" />
+
         </menu>
     </item>
 </menu>

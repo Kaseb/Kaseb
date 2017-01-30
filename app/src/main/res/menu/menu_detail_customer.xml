@@ -1,37 +1,58 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/edit"
-    android:title="@string/back_arrow"
-    android:icon="@drawable/edit"
-    app:showAsAction="always"
-    android:showAsAction="collapseActionView|ifRoom"
-    android:orderInCategory="1"
-    />
+
+    <item
+        android:id="@+id/item_save_customer"
+        android:icon="@drawable/save"
+        android:orderInCategory="1"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/back_arrow"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item_edit_customer"
+        android:icon="@drawable/edit"
+        android:orderInCategory="2"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/back_arrow"
+        app:showAsAction="always" />
+
     <item
         android:id="@+id/customer_detail_membership_icon"
-        android:title="@string/set_membership"
         android:icon="@drawable/star"
-        app:showAsAction="always"
-        android:showAsAction="ifRoom">
+        android:showAsAction="ifRoom"
+        android:title="@string/set_membership"
+        app:showAsAction="always">
+
         <menu>
+
             <item
-                android:title="@string/set_membership"
+                android:checkable="false"
                 android:enabled="false"
-                android:checkable="false">
-            </item>
+                android:title="@string/set_membership" />
+
             <item
                 android:id="@+id/gold_member"
+                android:icon="@drawable/star_gold"
                 android:title="@string/gold_member" />
+
             <item
                 android:id="@+id/silver_member"
+                android:icon="@drawable/star_silver"
                 android:title="@string/silver_memer" />
+
             <item
                 android:id="@+id/bronze_member"
+                android:icon="@drawable/star_bronze"
                 android:title="@string/bronze_member" />
+
             <item
                 android:id="@+id/non_member"
-                android:title="@string/non_member"/>
+                android:icon="@drawable/star_ordinary"
+                android:title="@string/non_member" />
+
         </menu>
+
     </item>
 
 </menu>

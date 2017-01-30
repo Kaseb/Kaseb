@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_content_detail_sale_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Sales.DetailSaleInsert"
+    tools:showIn="@layout/activity_detail_sale_insert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_detail_sale_info"
+                style="@style/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/divider_list"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_of_card_view_title"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/detail_sales_info_header"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="@dimen/text_size_in_list" />
+
+                    <LinearLayout
+                        android:id="@+id/content_detail_sale_insert_linear_layout_add_customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                        android:gravity="center_vertical|start"
+                        android:nestedScrollingEnabled="false"
+                        android:onClick="fab_detail_sale_add_customer"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.RoundImageView
+                            android:id="@+id/detail_sale_customer_image"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:contentDescription="@string/avatar_customer_insert"
+                            android:src="@drawable/kaseb_pic" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/detail_sales_info_customer_name"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/top_of_list_margin"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical|start"
+                            android:hint="@string/click_here_choose_customer"
+                            android:paddingStart="@dimen/padding_left_text_view"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorAccent"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_detail_sales_info_sale_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_of_list_margin"
+                        android:paddingLeft="@dimen/padding_left_text_view"
+                        app:errorEnabled="false"
+                        app:errorTextAppearance="@style/text_input_layout_style_has_error">
+
+                        <EditText
+                            android:id="@+id/detail_sales_info_sale_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="@dimen/top_of_list_margin"
+                            android:gravity="center_vertical|start"
+                            android:hint="@string/detail_sales_info_sale_code"
+                            android:inputType="text"
+                            android:maxLength="15"
+                            android:nestedScrollingEnabled="false"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textSize="@dimen/text_size_in_list_sub_title"
+                            android:transitionName="@string/code_text_transition" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_layout_detail_sales_info_sale_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                        android:paddingLeft="@dimen/padding_left_text_view"
+                        app:errorEnabled="false"
+                        app:errorTextAppearance="@style/text_input_layout_style_has_error">
+
+                        <EditText
+                            android:id="@+id/detail_sales_info_sale_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="@dimen/top_of_list_margin"
+                            android:ems="10"
+                            android:gravity="center_vertical|start"
+                            android:hint="@string/hint_date"
+                            android:inputType="date"
+                            android:maxLength="10"
+                            android:nestedScrollingEnabled="false"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_detail_sale_insert_items_list"
+                style="@style/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/card_view_products_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/text_view_title_list_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_of_card_view_title"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/detail_sales_products_items_header"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="@dimen/text_size_in_list" />
+
+                        <ImageButton
+                            android:id="@+id/content_detail_sale_insert_add_product_image_button"
+                            style="@style/sales_card_view_fab"
+                            android:background="@drawable/oval_ripple"
+                            android:contentDescription="@string/content_detail_sale_insert_add_product_image_button"
+                            android:onClick="fab_detail_sale_add_product"
+                            android:src="@drawable/plus" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimaryLight"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_products_items_name"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_products_items_quantity"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/abc_text_size_menu_material" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_products_items_price"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_products_items_total"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/my_container_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_detail_sale_insert_tax_discounts"
+                style="@style/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_of_card_view_title"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/detail_sales_taxDiscount_header"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="@dimen/text_size_in_list" />
+
+                        <ImageButton
+                            android:id="@+id/content_detail_sale_insert_add_taxDiscount_image_button"
+                            style="@style/sales_card_view_fab"
+                            android:onClick="fab_detail_sale_add_taxDiscount"
+                            android:src="@drawable/plus" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimaryLight"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/detail_sales_taxDiscount_amount"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_taxDiscount_percent"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_taxDiscount_type"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/my_container_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/My_Container_2_ID" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_detail_sale_insert_payments"
+                style="@style/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_of_card_view_title"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/detail_sales_payment_header"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite"
+                            android:textSize="@dimen/text_size_in_list" />
+
+                        <ImageButton
+                            android:id="@+id/content_detail_sale_insert_add_payment_image_button"
+                            style="@style/sales_card_view_fab"
+                            android:onClick="fab_detail_sale_add_payment"
+                            android:src="@drawable/plus" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimaryLight"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="7"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:text="@string/detail_sales_payment_amount"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_payment_due_date"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="@string/detail_sales_payment_type"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:textColor="@color/colorWhite"
+                                android:textColorHint="@color/colorWhite"
+                                android:textSize="@dimen/text_size_in_list" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/my_container_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/My_Container_1_ID" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_detail_sale_summary"
+                style="@style/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/buttom_of_card_view"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/divider_list"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_of_card_view_title"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/detail_sales_summary_header"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="@dimen/text_size_in_list" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_total_amount"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_total_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_tax"
+
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_tax"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_discount"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_discount"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_final_amount"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_final_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_payment"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_payed"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/top_of_list_margin"
+                            android:layout_marginRight="@dimen/top_of_list_margin_in_row"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/detail_sales_summary_total_balance"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                        <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                            android:id="@+id/card_detail_sale_summary_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/text_size_in_list_sub_title" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

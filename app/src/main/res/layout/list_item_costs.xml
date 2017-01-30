@@ -1,69 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="72dp"
     android:layout_width="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingStart="@dimen/activity_horizontal_margin"
-    android:paddingEnd="4dp"
-    android:paddingRight="4dp">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/top_of_list_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:baselineAligned="false"
         android:orientation="horizontal">
+
         <LinearLayout
-            android:layout_height="72dp"
             android:layout_width="0dp"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:orientation="vertical"
-            >
-            <TextView
-                android:id="@+id/item_list_cost_name"
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="@string/sample_cost_name"
-                android:layout_marginLeft="@dimen/item_horizontal_margin"
-                android:layout_marginStart="@dimen/item_horizontal_margin"
-                android:fontFamily="sans-serif-condensed"
-                android:textColor="@color/cardview_dark_background"
-                android:textAppearance="?android:textAppearanceMedium"
-                />
-            <TextView
-                android:id="@+id/item_list_cost_date"
-                android:layout_marginLeft="@dimen/item_horizontal_margin"
-                android:layout_marginStart="@dimen/item_horizontal_margin"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:textAppearance="?android:textAppearanceSmall"
-                android:text="@string/sample_due_date_1_day"
-                />
-            <TextView
-                android:id="@+id/item_list_cost_code"
-                android:layout_marginLeft="@dimen/item_horizontal_margin"
-                android:layout_marginStart="@dimen/item_horizontal_margin"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:textColor="@color/colorPrimary"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:text="@string/sample_2_invoice_code"
-                />
-        </LinearLayout>
-        <TextView
-            android:id="@+id/item_list_cost_amount"
-            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/top_of_list_margin"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:layout_marginEnd="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginLeft="@dimen/item_horizontal_margin"
-            android:layout_marginStart="@dimen/item_horizontal_margin"
-            android:text="@string/sample_text_purchase_of_customer_amount"
-            android:fontFamily="sans-serif-condensed"
-            android:textAppearance="?android:textAppearanceLarge"
-            />
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_cost_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/sample_cost_name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_cost_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                android:text="@string/sample_2_invoice_code"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_cost_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_of_list_margin_in_row"
+                android:text="@string/sample_due_date_1_day"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <mjkarbasian.moshtarimadar.Helpers.AutoResizeTextView
+                android:id="@+id/item_list_cost_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/sample_text_purchase_of_customer_amount"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="@dimen/text_size_in_list" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </FrameLayout>

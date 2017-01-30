@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/kaseb_center">
+    <target
+        android:name="k"
+        android:animation="@anim/k_anim" />
+    <target
+        android:name="k_2"
+        android:animation="@anim/k_2_anim" />
+    <target
+        android:name="a"
+        android:animation="@anim/a_anim" />
+    <target
+        android:name="s"
+        android:animation="@anim/s_anim" />
+    <target
+        android:name="e"
+        android:animation="@anim/e_anim" />
+    <target
+        android:name="b"
+        android:animation="@anim/b_anim" />
+</animated-vector>

@@ -1,41 +1,170 @@
 <resources>>
 
     <style name="AppTheme.NoActionBar">
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+
     </style>
 
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar">
+
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+
     </style>
 
     <style name="Theme.AppCompat.Light.NoActionBar">
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+
     </style>
 
     <style name="debator_table_header_text">
+
         <item name="android:layout_height">@dimen/debate_table_cell_height</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:gravity">center</item>
         <item name="android:clickable">true</item>
         <item name="android:background">?attr/selectableItemBackground</item>
+
     </style>
 
     <style name="debator_table_cell_text">
+
         <item name="android:layout_height">@dimen/debate_table_cell_height</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">18sp</item>
+
     </style>
+
+    <style name="card_view">
+
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:nestedScrollingEnabled">true</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+
+    </style>
+
+    <style name="text_display_large">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_display_medium">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_display_small">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_head_line">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_title">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="text_sub_heading">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_body_large">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="text_body_medium">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="text_caption">
+
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="button">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="set_error_appearance" parent="@android:style/TextAppearance">
+
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <!--Error label text style-->
+    <style name="text_input_layout_style_has_error" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="sales_card_view_fab">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/oval_ripple</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
 
 </resources>
 
