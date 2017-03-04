@@ -19,26 +19,27 @@ public class IntroFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_intro_animation,container,false);
+        View rootView = inflater.inflate(R.layout.fragment_intro_animation, container, false);
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Do something after 5s = 5000ms
-                getActivity().finish();
-                Intent intent = new Intent(getActivity(), Dashboard.class);
-                startActivity(intent);
-                getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);}
+                try {
+                    // Do something after 5s = 5000ms
+                    getActivity().finish();
+                    Intent intent = new Intent(getActivity(), Dashboard.class);
+                    startActivity(intent);
+                    getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                } catch (Exception e) {
+                }
+            }
         }, 3000);
-
 
         return rootView;
     }
-
 }

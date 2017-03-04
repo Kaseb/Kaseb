@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -259,7 +260,6 @@ public class PreferenceHeader extends Fragment {
                                         Toast.makeText(getActivity(), R.string.msg_insert_succeed, Toast.LENGTH_SHORT).show();
                                     //endregion save info of kaseb profile
 
-
                                     try {
                                         ((DrawerActivity) getActivity()).setInfoOfKaseb();
                                     } catch (IOException e) {
@@ -267,6 +267,7 @@ public class PreferenceHeader extends Fragment {
                                     } catch (DocumentException e) {
                                         e.printStackTrace();
                                     }
+
                                     getHelperText();
                                     wantToCloseDialog = true;
 
@@ -481,11 +482,23 @@ public class PreferenceHeader extends Fragment {
             case (PICK_FROM_GALLERY): {
 
                 try {
-                    mCustomerAvatar.setImageURI(data.getData());
+                    if (data.getData() != null) {
+                        //this is work in android 5.1 api 22
+                        mCustomerAvatar.setImageURI(data.getData());
 
-                    editor.putString("customerAvatar",
-                            Utility.encodeTobase64(((BitmapDrawable) mCustomerAvatar.getDrawable()).getBitmap()));
-                    editor.apply();
+                        editor.putString("customerAvatar",
+                                Utility.encodeTobase64(((BitmapDrawable) mCustomerAvatar.getDrawable()).getBitmap()));
+                        editor.apply();
+                    } else if (data.getExtras().getParcelable("data") != null) {
+                        //this is work in android 4.2 api 17
+                        Bitmap photo;
+                        photo = data.getExtras().getParcelable("data");
+                        mCustomerAvatar.setImageBitmap(photo);
+
+                        editor.putString("customerAvatar",
+                                Utility.encodeTobase64(((BitmapDrawable) mCustomerAvatar.getDrawable()).getBitmap()));
+                        editor.apply();
+                    }
                 } catch (Exception e) {
                 }
 

@@ -54,7 +54,7 @@ public class DebtorsList extends Fragment implements LoaderManager.LoaderCallbac
 
         View rootView = inflater.inflate(R.layout.activity_debtors, container, false);
         mListView =(ListView) rootView.findViewById(R.id.list_view_debater);
-        mDebaterAdapter = new DebtorAdapter(getActivity(), null, 0);
+        mDebaterAdapter = new DebtorAdapter(getActivity(),null,0);
         mListView.setAdapter(mDebaterAdapter);
         TextView emptyText = (TextView) rootView.findViewById(R.id.empty_text_view);
         emptyText.setText(getActivity().getResources().getString(R.string.empty_list_text));

@@ -9,17 +9,17 @@
         app:showAsAction="always" />
 
     <!--<item-->
-        <!--android:id="@+id/sort_button"-->
-        <!--android:icon="@drawable/sort"-->
-        <!--android:title="@string/sort_title"-->
-        <!--app:showAsAction="always">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/menu_sort_newest"-->
-                <!--android:title="@string/sort_alphabetic" />-->
-            <!--<item-->
-                <!--android:id="@+id/menu_sort_rating"-->
-                <!--android:title="@string/sort_membership" />-->
-        <!--</menu>-->
+    <!--android:id="@+id/sort_button"-->
+    <!--android:icon="@drawable/sort"-->
+    <!--android:title="@string/sort_title"-->
+    <!--app:showAsAction="always">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/menu_sort_newest"-->
+    <!--android:title="@string/sort_alphabetic" />-->
+    <!--<item-->
+    <!--android:id="@+id/menu_sort_rating"-->
+    <!--android:title="@string/sort_membership" />-->
+    <!--</menu>-->
     <!--</item>-->
 </menu>
